@@ -1,0 +1,35 @@
+@mixin accessibility_item {
+    content: "";
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    background-size: 100%;
+    top: -120px;
+    left: 110px;
+}
+
+@mixin img_of_accessibility {
+    width: 333px;
+    position: relative;
+}
+
+@mixin accessibility_item_title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #36536B;
+    text-align: center;
+}
+
+@mixin accessibility_item_text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #6C8294;
+}
+
+@mixin displayFlex($flex, $justify, $allign) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $allign;
+}

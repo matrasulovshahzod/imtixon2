@@ -1,0 +1,84 @@
+.imploment{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__into{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        margin-left: 0;
+
+        &__info{
+           width: 35%;
+           margin-right: 120px;
+        }
+
+        &__info >h2{
+            font-weight: normal;
+            font-size: 48px;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        &__info >p{
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+    }
+}
+
+.imploment__into::before{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 444px;
+    background: url(../img/implement_img.png) no-repeat;
+    background-size: 100%;
+    left: -55px;
+    top: -51px;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+    .imploment{
+
+        &__into{
+            
+            &__info{
+                width: 100%;
+                padding-top: 300px;
+                margin-right: 0;
+            }
+
+            &__info >h2{
+                position: relative;
+                text-align: center;
+            }
+
+            &__info >p{
+                text-align: center;
+            }
+        }
+    }
+
+    .imploment__into::before{
+        display: none;
+    }
+
+    .imploment__into__info >h2::before{
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 444px;
+        background: url(../img/implement_img.png) no-repeat center;
+        background-size: 100%;
+        left: 70px;
+        top: -380px;
+    }
+}

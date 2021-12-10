@@ -1,0 +1,110 @@
+.about{
+    position: relative;
+    background-color: #1B262F;
+    max-width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 420px;
+        height: 420px;
+        background: url(../img/Bitmap.png) no-repeat;
+        background-size: 100%;
+    }
+
+    &__into{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        
+
+        &__info{
+            color: #FBFCFE;
+            width: 40%;
+
+            &__btn{
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #1B262F;
+                border-radius: 24px;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                padding: 11px 20px;
+                font-size: 15px;
+                border: 1px solid #FBFCFE;
+            }
+
+            &__btn:active{
+                color: #1B262F;
+                background-color: #ffffff;
+            }
+        }
+
+        &__info >h2{
+            font-family: 'DM Serif Display', serif;
+            font-weight: normal;
+            font-size: 48px;
+        }
+
+        &__info >p{
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+
+        &__icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 50%;
+            margin-top: 60px;
+
+            &__pic{
+                padding-top: 30px;
+                padding-left: 30px;
+            }
+        }
+        
+
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .about{
+
+        &__into{
+            display: flex;
+            flex-direction: column-reverse;
+
+            &__info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 70%;
+            }
+
+            &__info >p{
+                text-align: center;
+            }
+
+            &__info >h2{
+                margin-bottom: 0;
+                text-align: center;
+            }
+
+            &__icons{
+                width: 80%;
+                
+            }
+        }
+    }
+} 

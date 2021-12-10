@@ -1,0 +1,78 @@
+.accessibilities{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__into{
+        @include img_of_accessibility();
+    }
+
+    &__into::before{
+        @include accessibility_item();
+        background: url(../img/personal_finans_before_img.png) no-repeat;
+    }
+
+    &__into >h5{
+        @include accessibility_item_title();
+    }
+
+    &__into >p{
+        @include accessibility_item_text();
+    }
+
+    &__into2{
+        @include img_of_accessibility();
+    }
+
+    &__into2::before{
+        @include accessibility_item();
+        background: url(../img/banking_before_img.png) no-repeat;
+    }
+
+    &__into2 >h5{
+        @include accessibility_item_title();
+    }
+
+    &__into2 >p{
+        @include accessibility_item_text();
+    }
+
+    &__into3{
+        @include img_of_accessibility();
+    }
+
+    &__into3::before{
+        @include accessibility_item();
+        background: url(../img/Consumer_before_img.png) no-repeat;
+    }
+
+    &__into3 >h5{
+        @include accessibility_item_title();
+    }
+
+    &__into3 >p{
+        @include accessibility_item_text();
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .accessibilities{
+        display: flex;
+        flex-direction: column;
+
+        &__into{
+            margin-top: 100px;
+        }
+
+        &__into2{
+            margin-top: 150px;
+        }
+
+        &__into3{
+            margin-top: 150px;
+        }
+    }
+}
